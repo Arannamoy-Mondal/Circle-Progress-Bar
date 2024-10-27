@@ -86,8 +86,8 @@ main{
     transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
 }
 
-
-@media screen and (max-width:480px) {
+/* for small screen mobile */
+@media screen and (max-width:576px) {
     main{
         margin: auto;
     }    
@@ -95,3 +95,4 @@ main{
         color: purple;
     }
 }
+
