@@ -5,7 +5,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
+main{
     display: flex;
     justify-content: center;
     align-items: center;
