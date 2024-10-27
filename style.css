@@ -91,4 +91,7 @@ main{
     main{
         margin: auto;
     }    
+    #solidity{
+        color: purple;
+    }
 }
