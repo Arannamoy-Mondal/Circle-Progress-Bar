@@ -11,6 +11,7 @@ main{
     align-items: center;
     min-height: 100vh;
     background: #222;
+    padding: 50px;
 }
 
 .container{
@@ -90,9 +91,16 @@ main{
 @media screen and (max-width:576px) {
     main{
         margin: auto;
+    }
+    .container{
+        flex-direction: column;
     }    
     #solidity{
         color: purple;
     }
 }
 
+/* for large device */
+@media screen and (max-width:992px) {
+    
+}
