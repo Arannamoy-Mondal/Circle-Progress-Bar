@@ -85,3 +85,10 @@ main{
     background: #444;
     transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
 }
+
+
+@media screen and (min-width:480px) {
+    main{
+        margin: auto;
+    }    
+}
