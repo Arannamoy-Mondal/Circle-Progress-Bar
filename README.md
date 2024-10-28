@@ -11,12 +11,13 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
+main{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #222;
+    padding: 50px;
 }
 
 .container{
@@ -90,6 +91,43 @@ body{
 .container .progress.less::before{
     background: #444;
     transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
+}
+
+/* for small screen mobile */
+@media screen and (max-width:576px) {
+    main{
+        margin: auto;
+        width: 100%;
+    }
+    #headLine h3{
+         text-align: center;
+         font-size: 1rem;
+    }
+    .container{
+        flex-direction: column;
+        gap: 15px;
+    }   
+    .container .progress h3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 1.5rem;
+        z-index: 1;
+        font-weight: 500;
+    } 
+    .container .progress h3 span{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    #solidity{
+        color: purple;
+    }
+}
+
+/* for large device */
+@media screen and (max-width:992px) {
+    
 }
 
 ```
